@@ -229,6 +229,9 @@ body {
   top: 0;
   transition: background-color 0.3s ease;
 }
+.timeline-item h3 {
+  padding-left: 1.5rem; /* Clear timeline circle */
+}
 .timeline-content {
   background: var(--light);
   padding: 1.5rem;
@@ -253,6 +256,47 @@ body {
 }
 .dark-mode .timeline-content .list-unstyled li i {
   color: var(--secondary);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section-home h1 {
+    font-size: 2.5rem;
+  }
+  .section-home h2 {
+    font-size: 1.2rem;
+  }
+  .section-title {
+    font-size: 2rem;
+  }
+  .timeline {
+    padding-left: 2.5rem; /* Increase padding to clear line */
+  }
+  .timeline::before {
+    left: 8px; /* Adjust vertical line position */
+  }
+  .timeline-item::before {
+    left: -6px; /* Shift circle to reduce overlap */
+  }
+  .timeline-item h3 {
+    padding-left: 2rem; /* Extra padding for headings */
+  }
+  .timeline-content {
+    padding-left: 1rem; /* Align content with headings */
+  }
+  .chatbot {
+    width: 90%;
+    right: 5%;
+  }
+  .profile-img {
+    max-width: 120px;
+  }
+  .job-entry {
+    margin-bottom: 1.5rem;
+  }
+  .experience-details-link {
+    font-size: 0.85rem;
+  }
 }
 
 /* Projects */
@@ -297,9 +341,23 @@ body {
 .dark-mode .blog-post {
   background: var(--dark);
 }
+.blog-postper {
+  position: relative;
+  overflow: hidden;
+}
 .blog-post .card-img-top {
-  height: 200px;
-  object-fit: cover;
+  transition: transform 0.3s;
+}
+.blog-post .card-img-wrapper{
+  position: relative;
+  overflow: hidden;
+}
+.blog-post:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.blog-post:hover .card-img-top {
+  transform: scale(1.05);
 }
 .blog-post .card-title {
   font-size: 1.5rem;
@@ -318,6 +376,9 @@ body {
   line-height: 1.6;
   color: var(--text);
   transition: color 0.3s ease;
+}
+.blog-card:hover .card-img-top {
+  transform: scale(1.05);
 }
 #blogModalContent {
   font-size: 1.1rem;
