@@ -1,0 +1,66 @@
+{
+  "posts": [
+    {
+      "id": "first-post",
+      "title": "First Blog Post",
+      "date": "May 9, 2025",
+      "category": "Announcement",
+      "image": "images/blog1.jpg",
+      "excerpt": "Today I launched my blog! I'll share insights on tech, personal projects, and my learning journey.",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "Today marks the official launch of my tech blog! I'm excited to share my journey as I explore the world of web development and artificial intelligence."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "What to Expect"
+        },
+        {
+          "type": "paragraph",
+          "text": "In this blog, I'll be sharing:"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Project walkthroughs and tutorials",
+            "Learning resources I find valuable",
+            "Challenges I encounter and how I solve them",
+            "Industry trends and new technologies"
+          ]
+        }
+      ],
+      "tags": ["blog", "announcement"],
+      "author": "Mena Alice"
+    },
+    {
+      "id": "learning-python",
+      "title": "Learning Python the Fun Way",
+      "date": "May 13, 2025",
+      "category": "Programming",
+      "image": "images/blog2.jpg",
+      "excerpt": "Diving into Python with the 100 Days of Code Bootcamp. Built a Car class and fun mini-projects!",
+      "content": [
+        {
+          "type": "paragraph",
+          "text": "This week I started the 100 Days of Code Bootcamp, focusing on Python. Here are some highlights from my first week:"
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Day 1-3: Basics Refresher"
+        },
+        {
+          "type": "code",
+          "language": "python",
+          "code": "class Car:\n    def _init_(self, make, model, year):\n        self.make = make\n        self.model = model\n        self.year = year\n        self.mileage = 0\n    \n    def drive(self, miles):\n        self.mileage += miles\n        return f\"Driven {miles} miles\""
+        }
+      ],
+      "tags": ["python", "beginners"],
+      "author": "Mena Alice"
+    }
+  ],
+  "categories": ["Announcement", "Programming", "Web Development", "AI"],
+  "recent_posts": ["first-post", "learning-python"]
+}
