@@ -460,6 +460,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const responses = {
     hi: "Hey! I'm Vuyi's Bot, here to talk about Vuyi's cloud engineering projects, AWS skills, or how to connect. What's up?",
+    hey: "Hey! I'm Vuyi's Bot, here to talk about Vuyi's cloud engineering projects, AWS skills, or how to connect. What's up?",
     hello: "Hi there! Want to dive into Vuyi's world of cloud computing and DevOps? Ask away!",
     projects: "Vuyi's projects are cutting-edge! Check out Web Hosting on AWS, Infrastructure as Code, and CI/CD pipelines in the Projects section.",
     contact: "Reach Vuyi at vuyi.mafu@gmail.com or WhatsApp at +263 777 122 948. The Contact section has a form to send a message!",
