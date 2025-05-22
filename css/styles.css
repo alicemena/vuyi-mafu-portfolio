@@ -510,7 +510,7 @@ body {
 }
 .message.user {
   background: var(--secondary);
-  color:--light);
+  color: var(--light);
   margin-left: 2rem;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
