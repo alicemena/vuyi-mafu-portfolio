@@ -409,7 +409,8 @@ body {
   transition: background-color 0.3s ease;
 }
 .dark-mode #blogModalContent .card {
-  background: var(--dark);
+  background: var(--tex);
+  color: var(--dark);
 }
 
 /* Contact */
